@@ -1,0 +1,164 @@
+<head>
+ <title>Reference</title
+</head>
+<body>
+  <h1>Reference Details</h1>
+{{> input}}
+{{> tabb}}
+{{> input1}}
+{{> tabb1}}
+</body>
+
+<template name="input">
+<label for="Name" id="l1">Name:</label><input type="text" id="message" placeholder="Enter Name"><br/><br/><br/>
+<label for="Address" id="l2">Address:</label><input type="text" id="message1" placeholder="Enter Address"><br/><br/><br/>
+<label for="Profession" id="l3">Profession: </label><input type="text" id="message2" placeholder="Enter Profession"><br/><br/><br/>
+<label for="Contact No" id="l4">Contact No.:</label><input type="text" id="message3" placeholder="Enter Contact No."><br/><br/><br/>
+<input type="submit" id="b1" value="SUBMIT">
+
+
+<br/><br/>
+<b><p>HELP FROM OTHER SOURCES</p></b>
+<br/><br/><br/><br/>
+
+</template>
+
+<template name="input1">
+<label for="Name Of Trust" id="l5">Name Of Trust:</label><input type="text" id="message4" placeholder="Enter Name Of Trust"><br/><br/><br/>
+<label for="Address" id="l6">Address:</label><input type="text" id="message5" placeholder="Enter Address"><br/><br/><br/>
+<label for="Amount" id="l7">Amount:</label><input type="text" id="message6" placeholder="Enter Amount"><br/><br/><br/>
+<input type="submit" id="b11" value="SUBMIT">
+
+</template>
+
+
+<template name="tabb">
+  <table border="2" width="300" id="table1">
+<thead>
+<td width="300">REFERENCE DETAILS</td>
+</thead>
+
+    <thead>
+<tr>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Profession</td>
+    <td>Contact No.</td>
+
+</tr>
+</thead>
+
+<tr border="0">
+<td>{{> messages}}</td>
+<td>{{> messages1}}</td>
+<td>{{> messages2}}</td>
+<td>{{> messages3}}</td>
+</tr>
+</table>
+<br/>
+<br/><br/><br/><br/>
+</template>
+
+
+<template name="tabb1">
+  <table border="2" width="300px" id="table2">
+<thead>
+<td>HELP FROM OTHER SOURCES</td>
+</thead>
+
+    <thead>
+<tr>
+    <td>Name of the trust</td>
+    <td>Address</td>
+    <td>Amount</td>
+    
+</tr>
+</thead>
+<tr border="0">
+<td>{{> messages4}}</td>
+<td>{{> messages5}}</td>
+<td>{{> messages6}}</td>
+
+</tr>
+</table>
+<br/>
+<br/><br/><br/><br/>
+</template>
+
+
+
+<template name="messages">
+
+{{#each messages}}
+     {{message}}<br>
+
+{{/each}}
+
+</template>
+
+<template name="messages1">
+
+{{#each messages1}}
+     {{message1}}<br>
+
+{{/each}}
+
+</template>
+
+<template name="messages2">
+
+{{#each messages2}}
+     {{message2}}<br>
+
+{{/each}}
+
+</template>
+
+
+<template name="messages3">
+
+{{#each messages3}}
+     {{message3}}<br>
+
+{{/each}}
+
+</template>
+
+
+<template name="messages4">
+
+{{#each messages4}}
+     {{message4}}<br>
+
+{{/each}}
+
+</template>
+
+<template name="messages5">
+
+{{#each messages5}}
+     {{message5}}<br>
+
+{{/each}}
+
+</template>
+
+<template name="messages6">
+
+{{#each messages6}}
+     {{message6}}<br>
+
+{{/each}}
+
+</template>
+
+
+
+
+
+
+
+
+
+
+
